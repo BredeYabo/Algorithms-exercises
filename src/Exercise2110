@@ -1,0 +1,6 @@
+Why not use selection sort for h-sorting in shellsort?
+
+This would be a bad idea because the whole point of h-sorting is to
+take advantage of the fact that insertion sort is faster when the
+array is partially sorted. Selection sort will always take quadratic
+time.

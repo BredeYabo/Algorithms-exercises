@@ -1,0 +1,8 @@
+2.1.8 Suppose that we use insertion sort on a randomly ordered array where elements
+have only one of three values. Is the running time linear, quadratic, or something in
+between?
+
+The runtime of Insertion sort is highly dependent on whether or not the array is partially sorted.
+We have 3 values on an N randomly ordered array. It's hard to say if this will have any effect
+on the runtime. But if it's randomly shuffled it won't matter, the runtime will still be
+quadratic.

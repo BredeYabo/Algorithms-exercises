@@ -1,7 +1,7 @@
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
-public class InsertionSort {
+public class SelectionSort {
 
     public static void sort(Comparable[] a) {
         int N = a.length;
