@@ -2,3 +2,29 @@ Dequeue sort. Explain how you would sort a deck of cards, with the restric-
 tion that the only allowed operations are to look at the values of the top two cards, to
 exchange the top two cards, and to move the top card to the bottom of the deck.
 
+We want to sort the cards in increasing order.
+
+Operations:
+a. Look at the top two cards
+
+
+b. Exchange the top two cards
+c. Move Top card to the bottom (dequeue)
+
+
+If we look at the top two cards, there are several possibilities:
+
+1. Card 1 is higher than card two
+Which operation: Operation b and c respectively.
+
+2. card 1 is lower than card two
+Which operation: Operation b.
+
+3. both cards are equal.
+Which operation: operation c two times.
+
+With these operations we need some way of finding out whether or not the deck of cards is sorted.
+After some number of exchange we should do a test to see if the deck is sorted.
+
+The test would perform 52 exchanges and 52 lookups, and if condition 2. were the case in any of
+these lookups, the deck is not sorted. If not, it's sorted.
